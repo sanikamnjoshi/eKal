@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        
+
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
             <span title="Users"><a href="admin-users.jsp"><i class="material-icons">people</i></a></span>
@@ -24,8 +24,54 @@
 
         <div class="main" align="center">
             <h1>Events</h1>
-            <p>This sidenav is always shown.</p>
+
+            <div class="eventcontainer">
+                
+                
+                <!-- db to be linked -->
+                
+                
+                <table border="0" cellspacing="10">
+                    <tr>
+                        <td>Event ID</td>
+                        <td><input type="text" name="tfEventId" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="tfEventName" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td><input type="text" name="tfEventDate" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Start Time</td>
+                        <td><input type="text" name="tfEventStartTime" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Minutes</td>
+                        <td><input type="text" name="tfEventDuration" size="30" disabled /></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            
+            <input class="button" type="button" value="Previous" name="btnPreviousEvent" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="button" type="button" value="Next" name="btnNextEvent" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <form action="admin-editEvent.jsp" method="POST" style="display:inline-block;">
+                <input class="button" type="submit" value="Edit Event" name="btnEditEvent" />
+            </form>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <form action="admin-createEvent.jsp" method="POST" style="display:inline-block;">
+                <input class="button" type="submit" value="Create Event" name="btnCreateEvent" />
+            </form>
         </div>
-        
+
     </body>
 </html>

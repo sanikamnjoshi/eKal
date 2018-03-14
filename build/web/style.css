@@ -78,6 +78,15 @@ input{
     cursor: pointer;
 }
 
+.dropdown-light {
+    font: 20px arial;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #888888;
+    cursor: pointer;
+}
+
 .login-box {
     padding: 20px;
     box-shadow: 10px 10px 20px #888888;
@@ -120,7 +129,7 @@ input{
 
 .main {
     margin-left: 64px; /* Same as the width of the sidenav */
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 /*
@@ -131,7 +140,7 @@ input{
 */
 
 td.not-current {
-                color: #777;
+    color: #777;
 }
 
 table.fixed-tbl {
@@ -145,4 +154,45 @@ table.fixed-tbl td {
 .calendarcontainer {
     height: 250px;
     overflow: no-display;
+}
+
+.eventcontainer {
+    height: 400px;
+    overflow: no-display;
+}
+
+
+/* for checkbox selection in dropdown */
+.multiselect {
+    width: 100%;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
 }

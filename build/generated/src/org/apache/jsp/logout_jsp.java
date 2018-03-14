@@ -65,7 +65,13 @@ public final class logout_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <div align=\"center\">\n");
+      out.write("        \n");
+      out.write("        <div class=\"sidenav\">\n");
+      out.write("            <span title=\"License\"><a href=\"license.html\" target=\"_blank\"><i class=\"material-icons\">copyright</i></a></span>\n");
+      out.write("            <span title=\"eKal GitHub Repo\"><a href=\"https://github.com/sanikamnjoshi/eKal\" target=\"_blank\"><i class=\"material-icons\">code</i></a></span>\n");
+      out.write("        </div>\n");
+      out.write("        \n");
+      out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>Thanks for using eKal!</h1>\n");
       out.write("            You have successfully logged out.\n");
       out.write("            <br>\n");

@@ -24,7 +24,22 @@
 
         <div class="main" align="center">
             <h1>Tasks</h1>
-            <p>This sidenav is always shown.</p>
+            
+            <div>
+               <!-- db fetched task list goes here -->
+            </div>
+
+            <br>
+            <form action="admin-editTask.jsp" method="POST" style="display:inline-block;">
+                <input class="button" type="submit" value="Edit Task" name="btnEditTask" />
+            </form>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <form action="admin-createTask.jsp" method="POST" style="display:inline-block;">
+                <input class="button" type="submit" value="Create Task" name="btnCreateTask" />
+            </form>
+            
         </div>
         
     </body>

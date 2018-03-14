@@ -56,6 +56,7 @@ public final class admin_002dlogin_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"License\"><a href=\"license.html\" target=\"_blank\"><i class=\"material-icons\">copyright</i></a></span>\n");
+      out.write("            <span title=\"eKal GitHub Repo\"><a href=\"https://github.com/sanikamnjoshi/eKal\" target=\"_blank\"><i class=\"material-icons\">code</i></a></span>\n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("        <div class=\"main\" align=\"center\">\n");

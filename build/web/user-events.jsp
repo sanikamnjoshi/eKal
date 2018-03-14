@@ -23,7 +23,45 @@
 
         <div class="main" align="center">
             <h1>My Events</h1>
-            <p>This sidenav is always shown.</p>
+            
+            
+            <div class="eventcontainer">
+                
+                
+                <!-- db to be linked -->
+                
+                
+                <table border="0" cellspacing="10">
+                    <tr>
+                        <td>Event ID</td>
+                        <td><input type="text" name="tfEventId" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="tfEventName" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td><input type="text" name="tfEventDate" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Start Time</td>
+                        <td><input type="text" name="tfEventStartTime" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Minutes</td>
+                        <td><input type="text" name="tfEventDuration" size="30" disabled /></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            
+            <input class="button" type="button" value="Previous" name="btnPreviousEvent" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="button" type="button" value="Next" name="btnNextEvent" />
+            
+            
         </div>
         
     </body>
