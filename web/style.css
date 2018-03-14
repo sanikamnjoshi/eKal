@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : sanika
+*/
+
+@font-face {
+    font-family: heading-font;
+    src: url(fonts/october.ttf);
+}
+
+h1 {
+    font: 50px heading-font;
+}
+
+body {
+    font: 20px arial;
+    color: #111;
+    background: #ffffff;
+}
+
+input{
+    background: transparent;
+    font: 20px arial;
+    border: none;
+    border-bottom: 1px solid #888888;
+}
+
+/* for google material icons font */
+@font-face {
+  font-family: material;
+  font-style: normal;
+  font-weight: 400;
+  src: url("icons/MaterialIcons-Regular.ttf") format('truetype');
+}
+.material-icons {
+  font-family: material;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+    color: #fff;
+    font: 20px arial;
+    height: 40px;
+    width: 140px;
+    border: none;
+    background-color: #111;
+    box-shadow: 5px 5px 5px #888888;
+    cursor: pointer;
+}
+
+.dropdown {
+    color: #fff;
+    font: 20px arial;
+    height: 40px;
+    width: 140px;
+    border: none;
+    background-color: #111;
+    box-shadow: 5px 5px 5px #888888;
+    cursor: pointer;
+}
+
+.login-box {
+    padding: 20px;
+    box-shadow: 10px 10px 20px #888888;
+    background-color: #cccccc;
+    width: 500px;
+    height: 180px;
+}
+
+.signup-box {
+    padding: 20px;
+    box-shadow: 10px 10px 20px #888888;
+    background-color: #cccccc;
+    width: 520px;
+    height: 250px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 64px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a:visited, a:link, a:active, a:focus{
+    padding: 6px 6px 6px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ff6666;
+}
+
+.main {
+    margin-left: 64px; /* Same as the width of the sidenav */
+    margin-top: -30px;
+}
+
+/*
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+*/
+
+td.not-current {
+                color: #777;
+}
+
+table.fixed-tbl {
+    table-layout:fixed;
+}
+
+table.fixed-tbl td {
+    overflow: hidden;
+}
+
+.calendarcontainer {
+    height: 250px;
+    overflow: no-display;
+}
