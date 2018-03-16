@@ -11,7 +11,8 @@
         <title>My Events</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body>
+    
+    <body style="background-image: url(bgl/bgl11.jpg);">
         
         <div class="sidenav">
             <span title="Home"><a href="user-home.jsp"><i class="material-icons">home</i></a>
@@ -56,7 +57,7 @@
             </div>
 
             <br>
-            
+            <br>
             <input class="button" type="button" value="Previous" name="btnPreviousEvent" />
             &nbsp;&nbsp;&nbsp;&nbsp;
             <input class="button" type="button" value="Next" name="btnNextEvent" />

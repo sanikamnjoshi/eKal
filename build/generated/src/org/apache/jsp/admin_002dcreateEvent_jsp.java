@@ -82,7 +82,7 @@ public final class admin_002dcreateEvent_jsp extends org.apache.jasper.runtime.H
       out.write("        \n");
       out.write("        \n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("    <body style=\"background-image: url(bgl/bgl1.jpg);\">\n");
       out.write("        \n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"Admin Home\"><a href=\"admin-home.jsp\"><i class=\"material-icons\">home</i></a></span>\n");

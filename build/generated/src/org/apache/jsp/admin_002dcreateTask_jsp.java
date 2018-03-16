@@ -51,7 +51,7 @@ public final class admin_002dcreateTask_jsp extends org.apache.jasper.runtime.Ht
       out.write("        <title>Create Task</title>\n");
       out.write("        <link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("    <body style=\"background-image: url(bgl/bgl2.jpg);\">\n");
       out.write("        \n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"Admin Home\"><a href=\"admin-home.jsp\"><i class=\"material-icons\">home</i></a></span>\n");
@@ -64,7 +64,9 @@ public final class admin_002dcreateTask_jsp extends org.apache.jasper.runtime.Ht
       out.write("\n");
       out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>Create Task</h1>\n");
-      out.write("            <p>This sidenav is always shown.</p>\n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("    </body>\n");

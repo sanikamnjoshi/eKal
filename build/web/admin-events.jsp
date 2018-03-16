@@ -11,7 +11,8 @@
         <title>Events</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body>
+    
+    <body style="background-image: url(bgl/bgl5.jpg);">
 
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -56,6 +57,7 @@
             </div>
 
             <br>
+            <br>
 
             <input class="button" type="button" value="Previous" name="btnPreviousEvent" />
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -71,6 +73,7 @@
             <form action="admin-createEvent.jsp" method="POST" style="display:inline-block;">
                 <input class="button" type="submit" value="Create Event" name="btnCreateEvent" />
             </form>
+            
         </div>
 
     </body>

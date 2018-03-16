@@ -18,7 +18,9 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
             $(function () {
-                $("#datepicker").datepicker();
+                $("#datepicker").datepicker({
+                    dateFormat: "dd/mm/yy"
+                });
             });
         </script>
 
@@ -37,10 +39,10 @@
                 });
             });
         </script>
-        
+
 
     </head>
-    <body>
+    <body style="background-image: url(bgl/bgl4.jpg);">
 
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -64,45 +66,28 @@
                 <table border="0" cellspacing="10">
                     <tr>
                         <td>Event ID</td>
-                        <td style="padding-left: 10px"><input type="text" name="tfEventId" size="30" disabled/></td>
+                        <td><input type="text" name="tfEventId" size="30" disabled/></td>
                     </tr>
                     <tr>
                         <td>Name</td>
-                        <td style="padding-left: 10px"><input type="text" name="tfEventName" size="30" /></td>
+                        <td><input type="text" name="tfEventName" size="30" /></td>
                     </tr>
                     <tr>
                         <td>Date</td>
-                        <td style="padding-left: 10px"><input type="text" name="tfEventDate" size="30" id="datepicker"/></td>
+                        <td><input type="text" name="tfEventDate" size="30" id="datepicker"/></td>
                     </tr>
                     <tr>
                         <td>Start Time</td>
-                        <td style="padding-left: 10px"><input type="text" name="tfEventStartTime" size="30" class="timepicker" /></td>
+                        <td><input type="text" name="tfEventStartTime" size="30" class="timepicker" /></td>
                     </tr>
                     <tr>
                         <td>Minutes</td>
-                        <td style="padding-left: 10px"><input type="text" name="tfEventDuration" size="30" /></td>
-                    </tr>
-                    <tr>
-                        <td style="position: absolute;">Participants</td>
-                        <td style="padding-left: 10px">
-
-                            <div class="checkboxscroll">
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                                <input type="checkbox" /> This is checkbox <br />
-                            </div>
-                        </td>
+                        <td><input type="text" name="tfEventDuration" size="30" /></td>
                     </tr>
                 </table>
             </div>
 
+            <br>
             <br>
 
             <input class="button" type="button" value="Previous" name="btnPreviousEvent" />
@@ -112,6 +97,8 @@
             <input class="button" type="button" value="Cancel" name="btnCancel" />
             &nbsp;&nbsp;&nbsp;&nbsp;
             <input class="button" type="button" value="Save" name="btnSave" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="button delete-button" type="button" value="Delete" name="btnDeleteEvent" />
 
         </div>        
 

@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 
-    <body> 
+    <body style="background-image: url(bgl/bgl13.jpg);"> 
 
         <div class="sidenav">
             <span title="License"><a href="license.html" target="_blank"><i class="material-icons">copyright</i></a></span>
@@ -23,8 +23,9 @@
         <div class="main" align="center">
             <h1>User Login</h1>
 
-            <div class="logincontainer">
-                <form name="user-login-form" action="user-validate.jsp" method="POST">
+
+            <form name="user-login-form" action="user-validate.jsp" method="POST">
+                <div class="logincontainer">
                     <table border="0" cellspacing="10">
                         <tr>
                             <td>Username</td>
@@ -35,10 +36,12 @@
                             <td><input type="password" name="tfUserPassword" value="" size="30" /></td>
                         </tr>
                     </table>
-                    <br>
-                    <input class="button" type="submit" value="Log In" name="btnUserLogin" />
-                </form>
-            </div>
+                </div>
+                
+                <br>
+                <br>
+                <input class="button" type="submit" value="Log In" name="btnUserLogin" />
+            </form>
         </div>
     </body>
 

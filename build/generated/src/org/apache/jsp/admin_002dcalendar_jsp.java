@@ -151,7 +151,7 @@ public final class admin_002dcalendar_jsp extends org.apache.jasper.runtime.Http
       out.write("\n");
       out.write("\n");
       out.write("                // Write selected month and year\n");
-      out.write("                var html = this.Months[m] + ', ' + y + '<br><br>';\n");
+      out.write("                var html = '<span style=\"font-size:30px;\">'+ this.Months[m] + ', ' + y + '</span><br><br>';\n");
       out.write("\n");
       out.write("                html += '<table class=\"fixed-tbl\"><col width=\"100px\" /><col width=\"100px\" /><col width=\"100px\" /><col width=\"100px\" /><col width=\"100px\" /><col width=\"100px\" /><col width=\"100px\" />';\n");
       out.write("\n");
@@ -247,7 +247,7 @@ public final class admin_002dcalendar_jsp extends org.apache.jasper.runtime.Http
       out.write("\n");
       out.write("    </head>\n");
       out.write("\n");
-      out.write("    <body>\n");
+      out.write("    <body style=\"background-image: url(bgl/bgl0.jpg);\">\n");
       out.write("\n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"Admin Home\"><a href=\"admin-home.jsp\"><i class=\"material-icons\">home</i></a></span>\n");
@@ -266,7 +266,7 @@ public final class admin_002dcalendar_jsp extends org.apache.jasper.runtime.Http
       out.write("            <div class=\"calendarcontainer\" id=\"divCalendar\">\n");
       out.write("            </div>\n");
       out.write("\n");
-      out.write("            \n");
+      out.write("            <br>\n");
       out.write("            <br>\n");
       out.write("            <input class=\"button\" type=\"button\" value=\"Previous\" id=\"btnPrev\" />\n");
       out.write("            &nbsp;&nbsp;&nbsp;&nbsp;\n");

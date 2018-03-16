@@ -12,7 +12,8 @@
         <title>Users</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body>
+    
+    <body style="background-image: url(bgl/bgl9.jpg);">
         
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -26,6 +27,39 @@
         <div class="main" align="center">
             <h1>Users</h1>
             
+            <div class="usercontainer">
+                <table border="0" cellspacing="10">
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text" name="tfUserFullName" value="" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="tfUsername" value="" size="30" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="text" name="tfUserPassword" value="" size="30" disabled /></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <br>
+            <br>
+            <input class="button" type="button" value="Previous" name="btnPreviousUser" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="button" type="button" value="Next" name="btnNextUser" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <form action="admin-editUser.jsp" method="POST" style="display:inline-block;">
+                <input class="button" type="submit" value="Edit User" name="btnEditUser" />
+            </form>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <form action="admin-createUser.jsp" method="POST" style="display:inline-block;">
+                <input class="button" type="submit" value="Create User" name="btnCreateUser" />
+            </form>
             
             
         </div>

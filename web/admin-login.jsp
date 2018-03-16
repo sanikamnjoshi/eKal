@@ -12,18 +12,19 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 
-    <body>
+    <body style="background-image: url(bgl/bgl7.jpg);">
 
         <div class="sidenav">
             <span title="License"><a href="license.html" target="_blank"><i class="material-icons">copyright</i></a></span>
             <span title="eKal GitHub Repo"><a href="https://github.com/sanikamnjoshi/eKal" target="_blank"><i class="material-icons">code</i></a></span>
         </div>
-        
+
         <div class="main" align="center">
             <h1>Admin Login</h1>
-            <br>
-            <div class="login-box">
-                <form name="admin-login-form" action="admin-validate.jsp" method="POST">
+            
+
+            <form name="admin-login-form" action="admin-validate.jsp" method="POST">
+                <div class="logincontainer">
                     <table border="0" cellspacing="10">
                         <tr>
                             <td>Admin ID</td>
@@ -34,10 +35,12 @@
                             <td><input type="password" name="tfAdminPassword" value="" size="30" /></td>
                         </tr>
                     </table>
-                    <br>
-                    <input class="button" type="submit" value="Log In" name="btnAdminLogin" />
-                </form>
-            </div>
+                </div>
+
+                <br>
+                <br>
+                <input class="button" type="submit" value="Log In" name="btnAdminLogin" />
+            </form>
         </div>
     </body>
 </html>

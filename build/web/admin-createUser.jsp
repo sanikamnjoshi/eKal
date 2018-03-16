@@ -11,7 +11,8 @@
         <title>Create User</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body>
+
+    <body style="background-image: url(bgl/bgl3.jpg);">
 
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -25,17 +26,14 @@
 
         <div class="main" align="center">
             <h1>Create User</h1>
-            
-            <div class="signupcontainer">
-                <form name="admin-createUser-form" action="admin-createUser-validate.jsp" method="POST">
+
+
+            <form name="admin-createUser-form" action="admin-createUser-validate.jsp" method="POST">
+                <div class="signupcontainer">
                     <table border="0" cellspacing="10">
                         <tr>
-                            <td>First Name</td>
-                            <td><input type="text" name="tfUserFirstName" value="" size="30" /></td>
-                        </tr>
-                        <tr>
-                            <td>Last Name</td>
-                            <td><input type="text" name="tfUserLastName" value="" size="30" /></td>
+                            <td>Full Name</td>
+                            <td><input type="text" name="tfUserFullName" value="" size="30" /></td>
                         </tr>
                         <tr>
                             <td>Username</td>
@@ -43,13 +41,15 @@
                         </tr>
                         <tr>
                             <td>Password</td>
-                            <td><input type="password" name="tfUserPassword" value="" size="30" /></td>
+                            <td><input type="text" name="tfUserPassword" value="" size="30" /></td>
                         </tr>
                     </table>
-                    <br>
-                    <input class="button" type="submit" value="Create User" name="btnCreateUser" />
-                </form>
-            </div>
+                </div>
+
+                <br>
+                <br>
+                <input class="button" type="submit" value="Create User" name="btnCreateUser" />
+            </form>
         </div>
     </body>
 

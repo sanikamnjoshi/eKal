@@ -51,7 +51,8 @@ public final class admin_002devents_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("        <title>Events</title>\n");
       out.write("        <link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("    \n");
+      out.write("    <body style=\"background-image: url(bgl/bgl5.jpg);\">\n");
       out.write("\n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"Admin Home\"><a href=\"admin-home.jsp\"><i class=\"material-icons\">home</i></a></span>\n");
@@ -96,6 +97,7 @@ public final class admin_002devents_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("            </div>\n");
       out.write("\n");
       out.write("            <br>\n");
+      out.write("            <br>\n");
       out.write("\n");
       out.write("            <input class=\"button\" type=\"button\" value=\"Previous\" name=\"btnPreviousEvent\" />\n");
       out.write("            &nbsp;&nbsp;&nbsp;&nbsp;\n");
@@ -111,6 +113,7 @@ public final class admin_002devents_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("            <form action=\"admin-createEvent.jsp\" method=\"POST\" style=\"display:inline-block;\">\n");
       out.write("                <input class=\"button\" type=\"submit\" value=\"Create Event\" name=\"btnCreateEvent\" />\n");
       out.write("            </form>\n");
+      out.write("            \n");
       out.write("        </div>\n");
       out.write("\n");
       out.write("    </body>\n");

@@ -51,7 +51,8 @@ public final class user_002devents_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("        <title>My Events</title>\n");
       out.write("        <link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("    \n");
+      out.write("    <body style=\"background-image: url(bgl/bgl11.jpg);\">\n");
       out.write("        \n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"Home\"><a href=\"user-home.jsp\"><i class=\"material-icons\">home</i></a>\n");
@@ -96,7 +97,7 @@ public final class user_002devents_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("            </div>\n");
       out.write("\n");
       out.write("            <br>\n");
-      out.write("            \n");
+      out.write("            <br>\n");
       out.write("            <input class=\"button\" type=\"button\" value=\"Previous\" name=\"btnPreviousEvent\" />\n");
       out.write("            &nbsp;&nbsp;&nbsp;&nbsp;\n");
       out.write("            <input class=\"button\" type=\"button\" value=\"Next\" name=\"btnNextEvent\" />\n");

@@ -11,7 +11,8 @@
         <title>Tasks</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body>
+    
+    <body style="background-image: url(bgl/bgl8.jpg);">
         
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -25,11 +26,36 @@
         <div class="main" align="center">
             <h1>Tasks</h1>
             
-            <div>
+            <div class="taskcontainer">
                <!-- db fetched task list goes here -->
+               
+               
+               
+               <table border="0" cellspacing="10">
+                    <tr>
+                        <td>Task ID</td>
+                        <td><input type="text" name="tfTaskId" size="30" disabled/></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td><textarea name="tfTaskDescr" rows="1" cols="30" disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Deadline</td>
+                        <td><input type="text" name="tfEventDate" size="30" disabled /></td>
+                    </tr>
+                </table>
+               
+               
             </div>
 
             <br>
+            <br>
+            <input class="button" type="button" value="Previous" name="btnPreviousTask" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="button" type="button" value="Next" name="btnNextTask" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
             <form action="admin-editTask.jsp" method="POST" style="display:inline-block;">
                 <input class="button" type="submit" value="Edit Task" name="btnEditTask" />
             </form>

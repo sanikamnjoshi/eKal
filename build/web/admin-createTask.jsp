@@ -11,7 +11,7 @@
         <title>Create Task</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body>
+    <body style="background-image: url(bgl/bgl2.jpg);">
         
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -24,7 +24,9 @@
 
         <div class="main" align="center">
             <h1>Create Task</h1>
-            <p>This sidenav is always shown.</p>
+            
+            
+            
         </div>
         
     </body>

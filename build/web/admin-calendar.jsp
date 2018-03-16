@@ -111,7 +111,7 @@
 
 
                 // Write selected month and year
-                var html = this.Months[m] + ', ' + y + '<br><br>';
+                var html = '<span style="font-size:30px;">'+ this.Months[m] + ', ' + y + '</span><br><br>';
 
                 html += '<table class="fixed-tbl"><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" />';
 
@@ -207,7 +207,7 @@
 
     </head>
 
-    <body>
+    <body style="background-image: url(bgl/bgl0.jpg);">
 
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -226,7 +226,7 @@
             <div class="calendarcontainer" id="divCalendar">
             </div>
 
-            
+            <br>
             <br>
             <input class="button" type="button" value="Previous" id="btnPrev" />
             &nbsp;&nbsp;&nbsp;&nbsp;

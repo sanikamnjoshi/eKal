@@ -53,7 +53,7 @@ public final class user_002dlogin_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("        <link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n");
       out.write("    </head>\n");
       out.write("\n");
-      out.write("    <body> \n");
+      out.write("    <body style=\"background-image: url(bgl/bgl13.jpg);\"> \n");
       out.write("\n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"License\"><a href=\"license.html\" target=\"_blank\"><i class=\"material-icons\">copyright</i></a></span>\n");
@@ -63,8 +63,9 @@ public final class user_002dlogin_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>User Login</h1>\n");
       out.write("\n");
-      out.write("            <div class=\"logincontainer\">\n");
-      out.write("                <form name=\"user-login-form\" action=\"user-validate.jsp\" method=\"POST\">\n");
+      out.write("\n");
+      out.write("            <form name=\"user-login-form\" action=\"user-validate.jsp\" method=\"POST\">\n");
+      out.write("                <div class=\"logincontainer\">\n");
       out.write("                    <table border=\"0\" cellspacing=\"10\">\n");
       out.write("                        <tr>\n");
       out.write("                            <td>Username</td>\n");
@@ -75,10 +76,12 @@ public final class user_002dlogin_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                            <td><input type=\"password\" name=\"tfUserPassword\" value=\"\" size=\"30\" /></td>\n");
       out.write("                        </tr>\n");
       out.write("                    </table>\n");
-      out.write("                    <br>\n");
-      out.write("                    <input class=\"button\" type=\"submit\" value=\"Log In\" name=\"btnUserLogin\" />\n");
-      out.write("                </form>\n");
-      out.write("            </div>\n");
+      out.write("                </div>\n");
+      out.write("                \n");
+      out.write("                <br>\n");
+      out.write("                <br>\n");
+      out.write("                <input class=\"button\" type=\"submit\" value=\"Log In\" name=\"btnUserLogin\" />\n");
+      out.write("            </form>\n");
       out.write("        </div>\n");
       out.write("    </body>\n");
       out.write("\n");

@@ -64,7 +64,8 @@ public final class logout_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        \n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("    \n");
+      out.write("    <body style=\"background-image: url(bgl/bgl15.jpg);\">\n");
       out.write("        \n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"License\"><a href=\"license.html\" target=\"_blank\"><i class=\"material-icons\">copyright</i></a></span>\n");

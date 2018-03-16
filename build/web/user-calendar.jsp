@@ -111,9 +111,9 @@
 
 
                 // Write selected month and year
-                var html = this.Months[m] + ', ' + y + '<br><br>';
+                var html = '<span style="font-size:30px;">' + this.Months[m] + ', ' + y + '</span><br><br>';
 
-                html += '<table class="fixed-tbl"><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" />';
+                html += '<table class="fixed-tbl"><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" />';
 
 
                 // Write the header of the days of the week
@@ -205,27 +205,26 @@
 
         </script>
 
-
-
     </head>
-    <body>
+
+    <body style="background-image: url(bgl/bgl10.jpg);">
 
         <div class="sidenav">
-            <span title="Home"><a href="user-home.jsp"><i class="material-icons">home</i></a>
-            <span title="Calendar"><a href="#"><i class="material-icons">date_range</i></a>
-            <span title="My Events"><a href="user-events.jsp"><i class="material-icons">event</i></a>
-            <span title="My Tasks"><a href="user-tasks.jsp"><i class="material-icons">done_all</i></a>
-            <span title="Log Out"><a href="logout.jsp"><i class="material-icons">close</i></a>
+            <span title="Home"><a href="user-home.jsp"><i class="material-icons">home</i></a></span>
+            <span title="Calendar"><a href="#"><i class="material-icons">date_range</i></a></span>
+            <span title="My Events"><a href="user-events.jsp"><i class="material-icons">event</i></a></span>
+            <span title="My Tasks"><a href="user-tasks.jsp"><i class="material-icons">done_all</i></a></span>
+            <span title="Log Out"><a href="logout.jsp"><i class="material-icons">close</i></a></span>
         </div>
 
         <div class="main" align="center">
             <h1>Calendar</h1>
-            
+
 
             <div class="calendarcontainer" id="divCalendar">
             </div>
-            
-            
+
+            <br>
             <br>
             <input class="button" type="button" value="Previous" id="btnPrev" />
             &nbsp;&nbsp;&nbsp;&nbsp;

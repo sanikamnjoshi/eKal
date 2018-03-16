@@ -24,7 +24,8 @@
 
         
     </head>
-    <body>
+    
+    <body style="background-image: url(bgl/bgl15.jpg);">
         
         <div class="sidenav">
             <span title="License"><a href="license.html" target="_blank"><i class="material-icons">copyright</i></a></span>

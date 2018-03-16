@@ -9,22 +9,30 @@ and open the template in the editor.
 
 @font-face {
     font-family: heading-font;
-    src: url(fonts/october.ttf);
+    src: url(fonts/roboto-bold.ttf);
 }
 
 @font-face {
     font-family: body-font;
-    src: url(fonts/cutie-regular.ttf);
+    src: url(fonts/roboto-condensed.ttf);
 }
 
 h1 {
-    font: 50px heading-font;
+    font: 60px heading-font;
+    color: #fff;
+    background-color: #222;
+    box-shadow: 10px 10px 10px #111;
+    height: 70px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: default;
 }
 
 body {
     font: 24px body-font;
     color: #111;
-    background-image: url(bgl/bgl0.jpg);
+    background-image: url(bgl/bgl20.jpg);
 }
 
 input{
@@ -65,21 +73,25 @@ input{
     color: #fff;
     font: 24px body-font;
     height: 40px;
-    width: 140px;
+    width: 145px;
     border: none;
-    background-color: #111;
-    box-shadow: 5px 5px 5px #888888;
+    background-color: #222;
+    box-shadow: 5px 5px 5px #111;
     cursor: pointer;
+}
+
+.delete-button {
+    background-color: #ff3333 !important;
 }
 
 .dropdown {
     color: #fff;
     font: 24px body-font;
     height: 40px;
-    width: 140px;
+    width: 145px;
     border: none;
-    background-color: #111;
-    box-shadow: 5px 5px 5px #888888;
+    background-color: #222;
+    box-shadow: 5px 5px 5px #111;
     cursor: pointer;
 }
 
@@ -93,23 +105,65 @@ input{
 }
 
 .logincontainer {
-    height: 180px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #111;
+    height: 130px;
+    padding: 30px;
+    width: 570px;
     overflow: no-display;
 }
 
 .signupcontainer {
-    height: 280px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #111;
+    height: 180px;
+    padding: 30px;
+    width: 570px;
+    overflow: no-display;
+}
+
+.usercontainer {
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #111;
+    height: 180px;
+    padding: 30px;
+    width: 570px;
     overflow: no-display;
 }
 
 .calendarcontainer {
-    height: 250px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #111;
+    height: 300px;
+    width: 600px;
+    padding: 20px;
+    padding-left: 60px;
     overflow: no-display;
 }
 
 .eventcontainer {
-    height: 300px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #111;
+    padding: 30px;
+    width: 570px;
+    height: 250px;
     overflow: no-display;
+}
+
+.taskcontainer {
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #111;
+    padding: 30px;
+    width: 570px;
+    height: 180px;
+    overflow: no-display;
+}
+
+textarea {
+    font: 24px body-font;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #888888;
 }
 
 .sidenav {
@@ -119,7 +173,8 @@ input{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #222;
+    box-shadow: 5px 5px 10px #111;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -138,7 +193,7 @@ input{
 
 .main {
     margin-left: 64px; /* Same as the width of the sidenav */
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 /*
@@ -193,7 +248,7 @@ table.fixed-tbl td {
     list-style: none outside none;
     margin: 0;
     padding: 0 1px;
-    text-align: center;
+    text-align: left !important;
 }
 
 .ui-timepicker-viewport {
@@ -218,25 +273,31 @@ table.fixed-tbl td {
     /* overwrites .ui-widget-content */
     background-color: #FFF;
     border: 1px solid #AAA;
-    color: #222;
+    color: #111;
     /* overwrites .ui-menu */
     margin: 0;
     padding: 2px;
 }
 .ui-timepicker-standard a {
     border: 1px solid transparent;
-    color: #222;
+    color: #111;
     display: block;
     padding: 0.2em 0.4em;
     text-decoration: none;
 }
+
+.ui-state-hover {
+    background-color: #ff6666 !important;
+}
+
 .ui-timepicker-standard .ui-state-hover {
-    /* overwrites .ui-state-hover */
-    background-color: #DADADA;
+    /* overwrites .ui-state-hover */ 
+    background-color: #ff6666;
     border: 1px solid #999;
     font-weight: normal;
-    color: #212121;
+    color: #111;
 }
+
 .ui-timepicker-standard .ui-menu-item {
     /* overwrites .ui-menu and .ui-menu-item */
     /*clear: left;
@@ -259,4 +320,19 @@ table.fixed-tbl td {
 
 .ui-timepicker-no-scrollbar .ui-timepicker {
     border: none;
+}
+
+
+
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid #ff6633;
+	background: #ff6633 !important;
+	font-weight: normal;
+	color: #ffffff;
 }
