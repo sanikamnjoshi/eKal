@@ -20,13 +20,13 @@
 
                 // Days of week, starting on Sunday
                 this.DaysOfWeek = [
-                    'Sunday',
-                    'Monday',
-                    'Tuesday',
-                    'Wednesday',
-                    'Thursday',
-                    'Friday',
-                    'Saturday'
+                    'Sun',
+                    'Mon',
+                    'Tue',
+                    'Wed',
+                    'Thu',
+                    'Fri',
+                    'Sat'
                 ];
 
                 // Months, stating on January
@@ -113,7 +113,7 @@
                 // Write selected month and year
                 var html = this.Months[m] + ', ' + y + '<br><br>';
 
-                html += '<table class="fixed-tbl"><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" /><col width="100px" />';
+                html += '<table class="fixed-tbl"><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" /><col width="80px" />';
 
 
                 // Write the header of the days of the week

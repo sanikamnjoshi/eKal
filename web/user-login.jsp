@@ -22,8 +22,8 @@
 
         <div class="main" align="center">
             <h1>User Login</h1>
-            <br>
-            <div class="login-box">
+
+            <div class="logincontainer">
                 <form name="user-login-form" action="user-validate.jsp" method="POST">
                     <table border="0" cellspacing="10">
                         <tr>

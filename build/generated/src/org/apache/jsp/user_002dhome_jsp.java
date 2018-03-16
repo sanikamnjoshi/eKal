@@ -63,7 +63,9 @@ public final class user_002dhome_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\n");
       out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>Home</h1>\n");
-      out.write("            <p>This sidenav is always shown.</p>\n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("    </body>\n");

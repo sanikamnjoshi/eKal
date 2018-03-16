@@ -26,11 +26,11 @@
             <h1>Events</h1>
 
             <div class="eventcontainer">
-                
-                
+
+
                 <!-- db to be linked -->
-                
-                
+
+
                 <table border="0" cellspacing="10">
                     <tr>
                         <td>Event ID</td>
@@ -56,12 +56,12 @@
             </div>
 
             <br>
-            
+
             <input class="button" type="button" value="Previous" name="btnPreviousEvent" />
             &nbsp;&nbsp;&nbsp;&nbsp;
             <input class="button" type="button" value="Next" name="btnNextEvent" />
             &nbsp;&nbsp;&nbsp;&nbsp;
-            
+
             <form action="admin-editEvent.jsp" method="POST" style="display:inline-block;">
                 <input class="button" type="submit" value="Edit Event" name="btnEditEvent" />
             </form>

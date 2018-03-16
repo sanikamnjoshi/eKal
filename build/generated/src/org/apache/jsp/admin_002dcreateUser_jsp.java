@@ -62,11 +62,11 @@ public final class admin_002dcreateUser_jsp extends org.apache.jasper.runtime.Ht
       out.write("            <span title=\"Log Out\"><a href=\"logout.jsp\"><i class=\"material-icons\">close</i></a></span>\n");
       out.write("        </div>\n");
       out.write("\n");
-      out.write("        \n");
+      out.write("\n");
       out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>Create User</h1>\n");
-      out.write("            <br>\n");
-      out.write("            <div class=\"signup-box\">\n");
+      out.write("            \n");
+      out.write("            <div class=\"signupcontainer\">\n");
       out.write("                <form name=\"admin-createUser-form\" action=\"admin-createUser-validate.jsp\" method=\"POST\">\n");
       out.write("                    <table border=\"0\" cellspacing=\"10\">\n");
       out.write("                        <tr>\n");
@@ -90,8 +90,9 @@ public final class admin_002dcreateUser_jsp extends org.apache.jasper.runtime.Ht
       out.write("                    <input class=\"button\" type=\"submit\" value=\"Create User\" name=\"btnCreateUser\" />\n");
       out.write("                </form>\n");
       out.write("            </div>\n");
+      out.write("        </div>\n");
       out.write("    </body>\n");
-      out.write("    \n");
+      out.write("\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

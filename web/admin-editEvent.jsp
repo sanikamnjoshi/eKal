@@ -22,9 +22,7 @@
             });
         </script>
 
-
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.js"></script>
         <script>
             $(document).ready(function () {
                 $('input.timepicker').timepicker({
@@ -39,22 +37,7 @@
                 });
             });
         </script>
-
-
-        <script>
-            var expanded = false;
-
-            function showCheckboxes() {
-                var checkboxes = document.getElementById("checkboxes");
-                if (!expanded) {
-                    checkboxes.style.display = "block";
-                    expanded = true;
-                } else {
-                    checkboxes.style.display = "none";
-                    expanded = false;
-                }
-            }
-        </script>
+        
 
     </head>
     <body>
@@ -102,24 +85,19 @@
                     <tr>
                         <td style="position: absolute;">Participants</td>
                         <td style="padding-left: 10px">
-                            <form>
-                                <div class="multiselect">
-                                    <div class="selectBox" onclick="showCheckboxes()">
-                                        <select class="dropdown-light" multiple size="1">
-                                            <option>Select Participants</option>
-                                        </select>
-                                        <div class="overSelect"></div>
-                                    </div>
-                                    <div id="checkboxes">
-                                        <label for="one">
-                                            <input type="checkbox" id="one" />First checkbox</label>
-                                        <label for="two">
-                                            <input type="checkbox" id="two" />Second checkbox</label>
-                                        <label for="three">
-                                            <input type="checkbox" id="three" />Third checkbox</label>
-                                    </div>
-                                </div>
-                            </form>
+
+                            <div class="checkboxscroll">
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                                <input type="checkbox" /> This is checkbox <br />
+                            </div>
                         </td>
                     </tr>
                 </table>

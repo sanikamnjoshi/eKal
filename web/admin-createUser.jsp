@@ -22,11 +22,11 @@
             <span title="Log Out"><a href="logout.jsp"><i class="material-icons">close</i></a></span>
         </div>
 
-        
+
         <div class="main" align="center">
             <h1>Create User</h1>
-            <br>
-            <div class="signup-box">
+            
+            <div class="signupcontainer">
                 <form name="admin-createUser-form" action="admin-createUser-validate.jsp" method="POST">
                     <table border="0" cellspacing="10">
                         <tr>
@@ -50,6 +50,7 @@
                     <input class="button" type="submit" value="Create User" name="btnCreateUser" />
                 </form>
             </div>
+        </div>
     </body>
-    
+
 </html>

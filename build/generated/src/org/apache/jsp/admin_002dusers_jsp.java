@@ -64,7 +64,9 @@ public final class admin_002dusers_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\n");
       out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>Users</h1>\n");
-      out.write("            <p>This sidenav is always shown.</p>\n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("    </body>\n");

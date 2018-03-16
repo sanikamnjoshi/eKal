@@ -64,7 +64,9 @@ public final class admin_002dhome_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\n");
       out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>Admin Home</h1>\n");
-      out.write("            <p>This sidenav is always shown.</p>\n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("    </body>\n");

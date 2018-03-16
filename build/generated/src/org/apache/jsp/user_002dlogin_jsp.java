@@ -62,8 +62,8 @@ public final class user_002dlogin_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\n");
       out.write("        <div class=\"main\" align=\"center\">\n");
       out.write("            <h1>User Login</h1>\n");
-      out.write("            <br>\n");
-      out.write("            <div class=\"login-box\">\n");
+      out.write("\n");
+      out.write("            <div class=\"logincontainer\">\n");
       out.write("                <form name=\"user-login-form\" action=\"user-validate.jsp\" method=\"POST\">\n");
       out.write("                    <table border=\"0\" cellspacing=\"10\">\n");
       out.write("                        <tr>\n");

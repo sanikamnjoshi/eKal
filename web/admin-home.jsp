@@ -24,7 +24,9 @@
 
         <div class="main" align="center">
             <h1>Admin Home</h1>
-            <p>This sidenav is always shown.</p>
+            
+            
+            
         </div>
         
     </body>
