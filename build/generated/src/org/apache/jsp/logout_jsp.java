@@ -70,6 +70,7 @@ public final class logout_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"License\"><a href=\"license.html\" target=\"_blank\"><i class=\"material-icons\">copyright</i></a></span>\n");
       out.write("            <span title=\"eKal GitHub Repo\"><a href=\"https://github.com/sanikamnjoshi/eKal\" target=\"_blank\"><i class=\"material-icons\">code</i></a></span>\n");
+      out.write("            <span title=\"Need help with eKal? Send us an email.\" class=\"helpoption\"><a href=\"mailto:ekalhelp@gmail.com?subject=Need Help With eKal &body=Hello%2C%0D%0A%0D%0AI am facing the following issue with eKal:%0D%0A%0D%0A%0D%0A%0D%0A---PLEASE WRITE YOUR EMAIL ABOVE THIS LINE---\" target=\"_top\"><i class=\"material-icons\">email</i></a></span>\n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("        <div class=\"main\" align=\"center\">\n");

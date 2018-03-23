@@ -179,6 +179,12 @@ textarea {
     padding-top: 20px;
 }
 
+.helpoption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
 .sidenav a:visited, a:link, a:active, a:focus {
     padding: 6px 6px 6px 20px;
     text-decoration: none;
