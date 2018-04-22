@@ -207,7 +207,7 @@
 
     </head>
 
-    <body style="background-image: url(bgl/bgl0.jpg);">
+    <body style="background-image: url(bgl/bgl19.jpg);">
 
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>

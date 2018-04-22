@@ -3,6 +3,7 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.sql.*;
 
 public final class admin_002dlogin_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -44,6 +45,10 @@ public final class admin_002dlogin_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\n");
       out.write("\n");
       out.write("\n");
+ Class.forName("com.mysql.jdbc.Driver");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -53,6 +58,7 @@ public final class admin_002dlogin_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("    </head>\n");
       out.write("\n");
       out.write("    <body style=\"background-image: url(bgl/bgl7.jpg);\">\n");
+      out.write("        \n");
       out.write("\n");
       out.write("        <div class=\"sidenav\">\n");
       out.write("            <span title=\"License\"><a href=\"license.html\" target=\"_blank\"><i class=\"material-icons\">copyright</i></a></span>\n");
@@ -64,7 +70,7 @@ public final class admin_002dlogin_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("            <h1>Admin Login</h1>\n");
       out.write("            \n");
       out.write("            <!-- change form action from admin-home to admin-validate -->\n");
-      out.write("            <form name=\"admin-login-form\" action=\"admin-home.jsp\" method=\"POST\">\n");
+      out.write("            <form name=\"admin-login-form\" action=\"admin-validate.jsp\" method=\"POST\">\n");
       out.write("                <div class=\"logincontainer\">\n");
       out.write("                    <table border=\"0\" cellspacing=\"10\">\n");
       out.write("                        <tr>\n");

@@ -4,6 +4,9 @@
     Author     : sanika
 --%>
 
+<%@page import="java.sql.*" %>
+<% Class.forName("com.mysql.jdbc.Driver");%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,6 +17,47 @@
     </head>
 
     <body style="background-image: url(bgl/bgl17.jpg);">
+        
+        
+        <%!
+            public class User {
+
+                String URL = "jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull";
+                String USERNAME = "root";
+                String PASSWORD = "root";
+
+                Connection connection = null;
+                PreparedStatement selectUsers = null;
+                ResultSet resultset = null;
+
+                public User() {
+                    try {
+                        connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+                        selectUsers = connection.prepareStatement("SELECT * from userTbl");
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                public ResultSet getUsers() {
+                    try {
+                        resultset = selectUsers.executeQuery();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+
+                    return resultset;
+                }
+
+            }
+        %>
+
+        <%
+            User userObj = new User();
+            ResultSet users = userObj.getUsers();
+        %>
+        
+        
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
             <span title="Users"><a href="admin-users.jsp"><i class="material-icons">people</i></a></span>
@@ -28,20 +72,25 @@
             <h1>Edit User Details</h1>
 
             <div class="usercontainer">
+                
+                <% users.next(); %>
+                
                 <table border="0" cellspacing="10">
                     <tr>
                         <td>Full Name</td>
-                        <td><input type="text" name="tfUserFullName" value="" size="30" /></td>
+                        <td><input type="text" name="tfUserFullName" size="30" disabled value="<%= users.getString("userFullName") %>" /></td>
                     </tr>
                     <tr>
                         <td>Username</td>
-                        <td><input type="text" name="tfUsername" value="" size="30" disabled /></td>
+                        <td><input type="text" name="tfUsername" size="30" disabled value="<%= users.getString("userId") %>" /></td>
                     </tr>
                     <tr>
                         <td>Password</td>
-                        <td><input type="text" name="tfUserPassword" value="" size="30" /></td>
+                        <td><input type="text" name="tfUserPassword" size="30" disabled value="<%= users.getString("userPassword") %>" /></td>
                     </tr>
                 </table>
+                
+                
             </div>
             
             <br>

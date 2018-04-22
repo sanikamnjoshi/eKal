@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/sanika/NetBeansProjects/eKal0/web/admin-login.jsp</file>
-            <file>file:/home/sanika/NetBeansProjects/eKal0/web/user-login.jsp</file>
-            <file>file:/home/sanika/NetBeansProjects/eKal0/web/style.css</file>
+            <file>file:/home/sanika/NetBeansProjects/eKal0/web/admin-createEvent.jsp</file>
+            <file>file:/home/sanika/NetBeansProjects/eKal0/web/admin-events.jsp</file>
             <file>file:/home/sanika/NetBeansProjects/eKal0/web/admin-calendar.jsp</file>
+            <file>file:/home/sanika/NetBeansProjects/eKal0/web/admin-createTask.jsp</file>
+            <file>file:/home/sanika/NetBeansProjects/eKal0/web/admin-createUser.jsp</file>
         </group>
     </open-files>
 </project-private>

@@ -4,6 +4,9 @@
     Author     : sanika
 --%>
 
+<%@page import="java.sql.*" %>
+<% Class.forName("com.mysql.jdbc.Driver");%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -27,6 +30,47 @@
     </head>
 
     <body style="background-image: url(bgl/bgl16.jpg);">
+        
+        
+        <%!
+            public class Task {
+
+                String URL = "jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull";
+                String USERNAME = "root";
+                String PASSWORD = "root";
+
+                Connection connection = null;
+                PreparedStatement selectTasks = null;
+                ResultSet resultset = null;
+
+                public Task() {
+                    try {
+                        connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+                        selectTasks = connection.prepareStatement("SELECT * from taskTbl");
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                public ResultSet getTasks() {
+                    try {
+                        resultset = selectTasks.executeQuery();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+
+                    return resultset;
+                }
+
+            }
+        %>
+
+        <%
+            Task taskObj = new Task();
+            ResultSet tasks = taskObj.getTasks();
+        %>
+        
+        
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
             <span title="Users"><a href="admin-users.jsp"><i class="material-icons">people</i></a></span>
@@ -46,18 +90,20 @@
                 <!-- db to be linked -->
 
 
-                <table border="0" cellspacing="10">
+                <% tasks.next(); %>
+               
+               <table border="0" cellspacing="10">
                     <tr>
                         <td>Task ID</td>
-                        <td><input type="text" name="tfTaskId" size="30" disabled/></td>
+                        <td><input type="text" name="tfTaskId" size="30" disabled value="<%= tasks.getString("taskId") %>" /></td>
                     </tr>
                     <tr>
                         <td>Description</td>
-                        <td><textarea name="tfTaskDescr" rows="1" cols="30"></textarea></td>
+                        <td><textarea name="tfTaskDescr" rows="1" cols="30" disabled><%= tasks.getString("taskName") %></textarea></td>
                     </tr>
                     <tr>
                         <td>Deadline</td>
-                        <td><input type="text" name="tfEventDate" size="30" id="datepicker"/></td>
+                        <td><input type="text" name="tfEventDate" size="30" disabled value="<%= tasks.getString("taskDeadline") %>" /></td>
                     </tr>
                 </table>
             </div>

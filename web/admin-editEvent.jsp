@@ -3,6 +3,9 @@
     Author     : sanika
 --%>
 
+<%@page import="java.sql.*" %>
+<% Class.forName("com.mysql.jdbc.Driver");%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -43,6 +46,47 @@
 
     </head>
     <body style="background-image: url(bgl/bgl4.jpg);">
+        
+        
+        <%!
+            public class Event {
+
+                String URL = "jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull";
+                String USERNAME = "root";
+                String PASSWORD = "root";
+
+                Connection connection = null;
+                PreparedStatement selectEvents = null;
+                ResultSet resultset = null;
+
+                public Event() {
+                    try {
+                        connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+                        selectEvents = connection.prepareStatement("SELECT * from eventTbl");
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                public ResultSet getEvents() {
+                    try {
+                        resultset = selectEvents.executeQuery();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+
+                    return resultset;
+                }
+
+            }
+        %>
+
+        <%
+            Event eventObj = new Event();
+            ResultSet events = eventObj.getEvents();
+        %>
+        
+        
 
         <div class="sidenav">
             <span title="Admin Home"><a href="admin-home.jsp"><i class="material-icons">home</i></a></span>
@@ -64,26 +108,28 @@
                 <!-- db to be linked -->
 
 
+                <% events.next(); %>
+
                 <table border="0" cellspacing="10">
                     <tr>
                         <td>Event ID</td>
-                        <td><input type="text" name="tfEventId" size="30" disabled/></td>
+                        <td><input type="text" name="tfEventId" size="30" disabled value="<%= events.getString("eventId") %>" /></td>
                     </tr>
                     <tr>
                         <td>Name</td>
-                        <td><input type="text" name="tfEventName" size="30" /></td>
+                        <td><input type="text" name="tfEventName" size="30" disabled value="<%= events.getString("eventName") %>" /></td>
                     </tr>
                     <tr>
                         <td>Date</td>
-                        <td><input type="text" name="tfEventDate" size="30" id="datepicker"/></td>
+                        <td><input type="text" name="tfEventDate" size="30" disabled value="<%= events.getDate("eventDate") %>" /></td>
                     </tr>
                     <tr>
                         <td>Start Time</td>
-                        <td><input type="text" name="tfEventStartTime" size="30" class="timepicker" /></td>
+                        <td><input type="text" name="tfEventStartTime" size="30" disabled value="<%= events.getTime("eventTime") %>" /></td>
                     </tr>
                     <tr>
                         <td>Minutes</td>
-                        <td><input type="text" name="tfEventDuration" size="30" /></td>
+                        <td><input type="text" name="tfEventDuration" size="30" disabled value="<%= events.getInt("eventDuration") %>" /></td>
                     </tr>
                 </table>
             </div>

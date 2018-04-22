@@ -3,6 +3,9 @@
     Author     : sanika
 --%>
 
+<%@page import="java.sql.*" %>
+<% Class.forName("com.mysql.jdbc.Driver");%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -25,7 +28,7 @@
             <h1>User Login</h1>
 
             <!-- change form action from user-home to user-validate -->
-            <form name="user-login-form" action="user-home.jsp" method="POST">
+            <form name="user-login-form" action="user-validate.jsp" method="POST">
                 <div class="logincontainer">
                     <table border="0" cellspacing="10">
                         <tr>

@@ -3,6 +3,9 @@
     Author     : sanika
 --%>
 
+<%@page import="java.sql.*" %>
+<% Class.forName("com.mysql.jdbc.Driver");%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +16,7 @@
     </head>
 
     <body style="background-image: url(bgl/bgl7.jpg);">
+        
 
         <div class="sidenav">
             <span title="License"><a href="license.html" target="_blank"><i class="material-icons">copyright</i></a></span>
@@ -24,7 +28,7 @@
             <h1>Admin Login</h1>
             
             <!-- change form action from admin-home to admin-validate -->
-            <form name="admin-login-form" action="admin-home.jsp" method="POST">
+            <form name="admin-login-form" action="admin-validate.jsp" method="POST">
                 <div class="logincontainer">
                     <table border="0" cellspacing="10">
                         <tr>
